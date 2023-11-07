@@ -16,6 +16,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Ping Result</th>
+                                <th>Webserver</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -24,6 +25,13 @@
                                 <td>{{ result.name }}</td>
                                 <td>
                                     {% if result.pingresult %}
+                                        <span class="tag is-success">True</span>
+                                    {% else %}
+                                        <span class="tag is-danger">False</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if result.webserver %}
                                         <span class="tag is-success">True</span>
                                     {% else %}
                                         <span class="tag is-danger">False</span>

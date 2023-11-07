@@ -4,15 +4,19 @@
         "ip": "192.168.80.45"
     },
     {
-        "name": "google dns server",
-        "ip": "8.8.8.8"
-    },
-    {
         "name": "router",
         "ip": "192.168.80.1"
     },
     {
         "name": "willeme dns",
         "ip": "192.168.80.32"
+    },
+    {
+        "name": "Home assistant",
+        "ip": "192.168.80.198"
+    },
+    {
+        "name": "omada controller",
+        "ip": "omada.willeme"
     }
 ]
