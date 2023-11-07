@@ -14,7 +14,7 @@ def write_results(timestamp, results, filepath: str):
         pass
     
     new_results = results
-    existing_results[f"pingresults_{timestamp}"] = new_results
+    existing_results[f"Scan Results ({timestamp})"] = new_results
 
     with open(filepath, "w") as resultfile:
         json.dump(existing_results, resultfile, indent=4)

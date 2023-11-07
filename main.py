@@ -55,9 +55,7 @@ def main():
         if sys.argv[1] == "check":
             timestamp, results = check()
             write_results(timestamp, results, "results.json")
-            html_report = generate_html_report(timestamp, results, "report_template.html")
-            with open("report.html", "w") as report_file:
-                report_file.write(html_report)
+            generate_html_report("report_template.html")
         elif sys.argv[1] == "manage":
             manage()
         else:
