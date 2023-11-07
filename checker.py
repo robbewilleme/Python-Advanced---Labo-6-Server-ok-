@@ -1,5 +1,6 @@
 from ping3 import ping
 import requests
+import socket
 
 def check_server(server: str) -> bool:
     response = ping(server)
@@ -7,6 +8,7 @@ def check_server(server: str) -> bool:
         return True
     else:
         return False
+
 
 def check_webserver(server: str) -> bool:
     url = f'http://{server}'
@@ -18,6 +20,18 @@ def check_webserver(server: str) -> bool:
             return True
     except requests.exceptions.ConnectionError:
         return False
+
+
+def check_ssh_port(server):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(1)
+    result = sock.connect_ex((server, 22))
+
+    if result == 0:
+        return True
+    else:
+        return False
+
 
 def main():
     server = input("IP or hostname: ")

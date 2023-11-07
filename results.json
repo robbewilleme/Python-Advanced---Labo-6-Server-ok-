@@ -196,5 +196,43 @@
             "pingresult": true,
             "webserver": false
         }
+    ],
+    "Scan Results (2023-11-08 00:26:50)": [
+        {
+            "name": "truenas server",
+            "pingresult": false,
+            "webserver": true,
+            "sshport": true
+        },
+        {
+            "name": "router",
+            "pingresult": true,
+            "webserver": true,
+            "sshport": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true,
+            "webserver": false,
+            "sshport": true
+        },
+        {
+            "name": "Home assistant",
+            "pingresult": true,
+            "webserver": false,
+            "sshport": false
+        },
+        {
+            "name": "omada controller",
+            "pingresult": true,
+            "webserver": false,
+            "sshport": true
+        },
+        {
+            "name": "testserver",
+            "pingresult": true,
+            "webserver": true,
+            "sshport": true
+        }
     ]
 }

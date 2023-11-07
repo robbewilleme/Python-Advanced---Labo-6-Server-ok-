@@ -1,5 +1,5 @@
 from datetime import datetime
-from checker import check_server, check_webserver
+from checker import check_server, check_webserver, check_ssh_port
 from jsonhandler import read_json, write_results
 from manageservers import add_server, list_all_servers, delete_server
 from report import generate_html_report
@@ -21,6 +21,7 @@ def check():
     table.add_column("IP Address")
     table.add_column("Ping Result")
     table.add_column("Web Server Status")
+    table.add_column("SSH port status")
     
     for server in servers:
         name = server["name"]
@@ -30,9 +31,10 @@ def check():
         try:
             pingresult = check_server(ip)
             webserver = check_webserver(ip)
-            results.append({"name": name, "pingresult": pingresult, "webserver": webserver})
+            sshport = check_ssh_port(ip)
+            results.append({"name": name, "pingresult": pingresult, "webserver": webserver, "sshport": sshport})
             
-            table.add_row(name, ip, str(pingresult), str(webserver))
+            table.add_row(name, ip, str(pingresult), str(webserver), str(sshport))
         except Exception as e:
             console.print(f"Error checking {name}: {e}", style="red")
     
