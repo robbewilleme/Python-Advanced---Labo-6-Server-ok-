@@ -52,5 +52,15 @@
             "name": "dns server",
             "pingresult": true
         }
+    ],
+    "pingresults_2023-11-07 20:15:38": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        }
     ]
 }

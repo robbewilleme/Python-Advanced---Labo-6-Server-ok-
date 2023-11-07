@@ -23,7 +23,6 @@ def check():
 
 def manage():
     print("program started in management mode, options:")
-    # print(" \"check\": check mode")
     print(" \"add\": add servers")
     print(" \"delete\": delete servers")
     print(" \"list\": list servers")
@@ -51,7 +50,14 @@ def main():
         elif mode == "manage":
             manage()
     else:
-        print(sys.argv[1])
+        if sys.argv[1] == "check":
+            results = check()
+            write_results(results, "results.json")
+        elif sys.argv[1] == "manage":
+            manage()
+        else:
+            print("Invalid argument. Use 'check' or 'manage' as arguments.")
+
 
 
 if __name__ == "__main__":
