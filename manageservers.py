@@ -1,4 +1,4 @@
-from jsonhandler import write_server, read_servers, write_servers
+from jsonhandler import write_server, read_json, write_servers
 
 
 def add_server(name: str, ip: str):
@@ -6,10 +6,10 @@ def add_server(name: str, ip: str):
     write_server(server, "servers.json")
 
 def list_all_servers():
-    return read_servers("servers.json")
+    return read_json("servers.json")
 
 def delete_server(name: str):
-    servers = read_servers("servers.json")
+    servers = read_json("servers.json")
     for server in servers:
         if server["name"] == name:
             servers.remove(server)

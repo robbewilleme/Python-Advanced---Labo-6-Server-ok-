@@ -62,5 +62,419 @@
             "name": "google dns server",
             "pingresult": true
         }
+    ],
+    "pingresults_2023-11-07 20:50:23": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": false
+        }
+    ],
+    "pingresults_2023-11-07 20:50:51": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 20:52:56": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 20:56:14": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 20:58:47": [
+        {
+            "name": "truenas server",
+            "pingresult": false
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:03:32": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:04:28": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:05:01": [
+        {
+            "name": "truenas server",
+            "pingresult": false
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:07:26": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:16:03": [
+        {
+            "name": "truenas server",
+            "pingresult": false
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:23:34": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:38:17": [
+        {
+            "name": "truenas server",
+            "pingresult": false
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:39:31": [
+        {
+            "name": "truenas server",
+            "pingresult": false
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:48:45": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:53:49": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:54:16": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": false
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:54:57": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:55:09": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 21:58:50": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 22:34:09": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": false
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 22:34:17": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 22:37:42": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 22:38:10": [
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "google dns server",
+            "pingresult": true
+        },
+        {
+            "name": "router",
+            "pingresult": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true
+        }
     ]
 }

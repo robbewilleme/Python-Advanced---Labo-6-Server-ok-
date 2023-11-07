@@ -1,11 +1,11 @@
 import json
 
-def read_servers(filepath: str):
-    with open(filepath, "r") as serverfile:
-        servers = json.load(serverfile)
-    return servers
+def read_json(filepath: str):
+    with open(filepath, "r") as file:
+        content = json.load(file)
+    return content
 
-def write_results(results, filepath: str):
+def write_results(timestamp, results, filepath: str):
     existing_results = {}
     try:
         with open(filepath, "r") as existingfile:
@@ -13,17 +13,18 @@ def write_results(results, filepath: str):
     except FileNotFoundError:
         pass
     
-    timestamp, new_results = results
+    new_results = results
     existing_results[f"pingresults_{timestamp}"] = new_results
 
     with open(filepath, "w") as resultfile:
         json.dump(existing_results, resultfile, indent=4)
+    
 
 def write_server(server, filepath: str):
     existing_servers = []
     servers = []
     try:
-        existing_servers = read_servers(filepath)
+        existing_servers = read_json(filepath)
     except FileNotFoundError:
         pass
     

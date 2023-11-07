@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            {% for timestamp, data in results.items() %}
+            <h2 class="title is-3">{{ timestamp }}</h2>
+            <table class="table is-bordered is-striped is-narrow is-hoverable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Ping Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in data %}
+                    <tr>
+                        <td>{{ result.name }}</td>
+                        <td>
+                            {% if result.pingresult %}
+                                <span class="tag is-success">True</span>
+                            {% else %}
+                                <span class="tag is-danger">False</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endfor %}
+        </div>
+    </section>
+</body>
+</html>

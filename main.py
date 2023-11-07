@@ -1,7 +1,8 @@
 from datetime import datetime
 from checker import check_server
-from jsonhandler import read_servers, write_results
+from jsonhandler import read_json, write_results
 from manageservers import add_server, list_all_servers, delete_server
+from report import generate_html_report
 import sys
 
 def check():
@@ -9,7 +10,7 @@ def check():
     print("checking server...")
     results = []
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    servers = read_servers("servers.json")
+    servers = read_json("servers.json")
     for server in servers:
         name = server["name"]
         ip = server["ip"]
@@ -45,14 +46,18 @@ def main():
     if len(sys.argv) < 2:
         mode = input("Typ 'check' om het programma in check modus te starten, typ 'manage' om het programma in management modus te starten: " )
         if mode == "check":
-            results = check()
-            write_results(results, "results.json")
+            timestamp, results = check()
+            write_results(timestamp, results, "results.json")
+            generate_html_report("report_template.html")
         elif mode == "manage":
             manage()
     else:
         if sys.argv[1] == "check":
-            results = check()
-            write_results(results, "results.json")
+            timestamp, results = check()
+            write_results(timestamp, results, "results.json")
+            html_report = generate_html_report(timestamp, results, "report_template.html")
+            with open("report.html", "w") as report_file:
+                report_file.write(html_report)
         elif sys.argv[1] == "manage":
             manage()
         else:
