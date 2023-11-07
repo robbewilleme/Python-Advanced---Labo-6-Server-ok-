@@ -18,3 +18,25 @@ def write_results(results, filepath: str):
 
     with open(filepath, "w") as resultfile:
         json.dump(existing_results, resultfile, indent=4)
+
+def write_server(server, filepath: str):
+    existing_servers = []
+    servers = []
+    try:
+        existing_servers = read_servers(filepath)
+    except FileNotFoundError:
+        pass
+    
+    if not existing_servers:
+        servers.append(server)
+        with open(filepath, "w") as f:
+            json.dump(servers, f, indent=4)
+    else:
+        existing_servers.append(server)
+
+        with open(filepath, "w") as serverfile:
+            json.dump(existing_servers, serverfile, indent=4)
+
+def write_servers(servers, filepath: str):
+    with open(filepath, "w") as serverfile:
+        json.dump(servers, serverfile, indent=4)

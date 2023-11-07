@@ -1,20 +1,10 @@
-{
-    "servers": [
-      {
-        "name": "Server1",
-        "ip": "192.168.80.22"
-      },
-      {
+[
+    {
         "name": "truenas server",
-        "ip": "truenas.willeme"
-      },
-      {
-        "name": "vmware server",
-        "ip": "vmware.willeme"
-      },
-      {
-        "name": "dns server",
-        "ip": "192.168.80.1"
-      }
-    ]
-  }
+        "ip": "192.168.80.45"
+    },
+    {
+        "name": "google dns server",
+        "ip": "8.8.8.8"
+    }
+]

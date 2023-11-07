@@ -1,6 +1,7 @@
 from datetime import datetime
 from checker import check_server
 from jsonhandler import read_servers, write_results
+from manageservers import add_server, list_all_servers, delete_server
 import sys
 
 def check():
@@ -9,7 +10,7 @@ def check():
     results = []
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     servers = read_servers("servers.json")
-    for server in servers["servers"]:
+    for server in servers:
         name = server["name"]
         ip = server["ip"]
         print(f"Pinging {name} at IP address: {ip}")
@@ -21,7 +22,25 @@ def check():
     return timestamp, results
 
 def manage():
-    print("program started in management mode")
+    print("program started in management mode, options:")
+    # print(" \"check\": check mode")
+    print(" \"add\": add servers")
+    print(" \"delete\": delete servers")
+    print(" \"list\": list servers")
+    while True:
+        command = input("type one of the command above: ")
+        if command == "add":
+            print("add server")
+            name = input("name: ")
+            ip = input("ip: ")
+            add_server(name, ip)
+        elif command == "delete":
+            print("delete server")
+            del_name = input("geef de naam van de server die je wilt verwijderen: ")
+            delete_server(del_name)
+        elif command == "list":
+            print("list servers")
+            print(list_all_servers())
 
 def main():
     if len(sys.argv) < 2:
@@ -31,18 +50,6 @@ def main():
             write_results(results, "results.json")
         elif mode == "manage":
             manage()
-
-
-        # print("Program started in interactive mode, input options:")
-        # print(" \"check\": check mode")
-        # print(" \"add\": add servers")
-        # print(" \"delete\": delete servers")
-        # print(" \"list\": list servers")
-
-        # if check_server("192.168.80.45"):
-        #     print("server online")
-        # else:
-        #     print("server offline")
     else:
         print(sys.argv[1])
 
