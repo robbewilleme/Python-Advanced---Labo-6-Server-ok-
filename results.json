@@ -169,5 +169,32 @@
             "pingresult": true,
             "webserver": false
         }
+    ],
+    "Scan Results (2023-11-07 23:55:19)": [
+        {
+            "name": "truenas server",
+            "pingresult": true,
+            "webserver": true
+        },
+        {
+            "name": "router",
+            "pingresult": true,
+            "webserver": true
+        },
+        {
+            "name": "willeme dns",
+            "pingresult": true,
+            "webserver": false
+        },
+        {
+            "name": "Home assistant",
+            "pingresult": true,
+            "webserver": false
+        },
+        {
+            "name": "omada controller",
+            "pingresult": true,
+            "webserver": false
+        }
     ]
 }

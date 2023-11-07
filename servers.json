@@ -18,5 +18,9 @@
     {
         "name": "omada controller",
         "ip": "omada.willeme"
+    },
+    {
+        "name": "testserver",
+        "ip": "192.168.80.45"
     }
 ]
