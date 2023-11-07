@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Server1",
+        "pingresult": false
+    },
+    {
+        "name": "truenas server",
+        "pingresult": true
+    },
+    {
+        "name": "vmware server",
+        "pingresult": true
+    },
+    {
+        "name": "dns server",
+        "pingresult": true
+    }
+]
