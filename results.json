@@ -1,18 +1,56 @@
-[
-    {
-        "name": "Server1",
-        "pingresult": false
-    },
-    {
-        "name": "truenas server",
-        "pingresult": true
-    },
-    {
-        "name": "vmware server",
-        "pingresult": true
-    },
-    {
-        "name": "dns server",
-        "pingresult": true
-    }
-]
+{
+    "pingresults_2023-11-07 17:49:51": [
+        {
+            "name": "Server1",
+            "pingresult": false
+        },
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "vmware server",
+            "pingresult": true
+        },
+        {
+            "name": "dns server",
+            "pingresult": false
+        }
+    ],
+    "pingresults_2023-11-07 17:50:12": [
+        {
+            "name": "Server1",
+            "pingresult": false
+        },
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "vmware server",
+            "pingresult": true
+        },
+        {
+            "name": "dns server",
+            "pingresult": true
+        }
+    ],
+    "pingresults_2023-11-07 17:51:32": [
+        {
+            "name": "Server1",
+            "pingresult": false
+        },
+        {
+            "name": "truenas server",
+            "pingresult": true
+        },
+        {
+            "name": "vmware server",
+            "pingresult": true
+        },
+        {
+            "name": "dns server",
+            "pingresult": true
+        }
+    ]
+}

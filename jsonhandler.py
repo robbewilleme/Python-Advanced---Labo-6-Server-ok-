@@ -6,5 +6,15 @@ def read_servers(filepath: str):
     return servers
 
 def write_results(results, filepath: str):
+    existing_results = {}
+    try:
+        with open(filepath, "r") as existingfile:
+            existing_results = json.load(existingfile)
+    except FileNotFoundError:
+        pass
+    
+    timestamp, new_results = results
+    existing_results[f"pingresults_{timestamp}"] = new_results
+
     with open(filepath, "w") as resultfile:
-        json.dump(results, resultfile, indent=4)
+        json.dump(existing_results, resultfile, indent=4)

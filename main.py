@@ -1,3 +1,4 @@
+from datetime import datetime
 from checker import check_server
 from jsonhandler import read_servers, write_results
 import sys
@@ -6,6 +7,7 @@ def check():
     print("program started in check mode")
     print("checking server...")
     results = []
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     servers = read_servers("servers.json")
     for server in servers["servers"]:
         name = server["name"]
@@ -16,14 +18,14 @@ def check():
             results.append({"name": name, "pingresult": pingresult})
         except:
             pass
-    return results
+    return timestamp, results
 
 def manage():
     print("program started in management mode")
 
 def main():
     if len(sys.argv) < 2:
-        mode = input("Typ 'check' om het programma in check modus te starten, typ 'manage' om het programma in management modus te starten" )
+        mode = input("Typ 'check' om het programma in check modus te starten, typ 'manage' om het programma in management modus te starten: " )
         if mode == "check":
             results = check()
             write_results(results, "results.json")
